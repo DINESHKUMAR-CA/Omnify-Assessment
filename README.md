@@ -5,8 +5,13 @@ This repository contains an automated test script for a hotel booking applicatio
 ## Test Scenario
 
 **1)** Open the hotel booking application.
+
 **2)** Search for hotels in "New York" for the dates April 10 - April 15.
+
 **3)** Select the first hotel from the search results.
+
 **4)** Apply the coupon code "SUMMER25".
+
 **5)** Verify that the discount is applied correctly.
+
 **6)** Proceed to checkout but do not complete payment.
