@@ -15,3 +15,6 @@ This repository contains an automated test script for a hotel booking applicatio
 **5)** Verify that the discount is applied correctly.
 
 **6)** Proceed to checkout but do not complete payment.
+
+## ⚠️ Note:
+Since most websites now use bot protection techniques to prevent automation tools like Selenium, I was unable to fully complete the verification of the discount in this script. This test script reaches the hotel listing page and performs steps 1 through 4.
