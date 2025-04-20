@@ -11,21 +11,17 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
-import java.util.Arrays;
 
 public class BrowserFactory {
 
     public static WebDriver driver;
     private static final Logger logger = LoggerFactory.getLogger(BrowserFactory.class);
 
-    public static WebDriver getDriver() {
-        return driver;
-    }
-
     public static WebDriver startApplication(String browserName, String testUrl) {
 
         if (browserName.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
+
             // Spoof user-agent and disable automation flags
             options.addArguments("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.96 Safari/537.36");
             options.addArguments("--disable-blink-features=AutomationControlled");

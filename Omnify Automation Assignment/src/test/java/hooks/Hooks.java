@@ -47,14 +47,14 @@ public class Hooks {
             }
         }
 
-//        try {
-//            if (driver != null) {
-//                driver.quit();
-//                logger.info("Browser closed successfully.");
-//            }
-//        } catch (Exception e) {
-//            logger.error("Error during browser teardown: {}", e.getMessage());
-//        }
+        try {
+            if (driver != null) {
+                driver.quit();
+                logger.info("Browser closed successfully.");
+            }
+        } catch (Exception e) {
+            logger.error("Error during browser teardown: {}", e.getMessage());
+        }
     }
 
     public static WebDriver getDriver() {

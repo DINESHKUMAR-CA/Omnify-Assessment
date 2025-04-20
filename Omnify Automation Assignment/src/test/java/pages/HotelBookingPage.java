@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,14 +17,12 @@ public class HotelBookingPage {
     private WebDriver driver;
     private final Logger logger = LoggerFactory.getLogger(HotelBookingPage.class);
     private WebDriverWait wait;
-    private Actions actions;
     private JavascriptExecutor js;
 
     public HotelBookingPage(WebDriver IDriver) {
         this.driver = IDriver;
         PageFactory.initElements(driver, this);
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        actions = new Actions(driver);
         js = (JavascriptExecutor) driver;
     }
 
